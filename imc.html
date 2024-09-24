@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        </nav>
+        <img src="img/logonutri.png" alt="Logo">
+        <h1>Instituto Santé</h1>
+        <h3>Nutrição e Saúde</h3>
+        <div class="header-menu">
+            <a class="abas" href="index.html">Início</a>
+            <a class="abas" href="quemsomos.html">Quem Somos</a>
+            <a class="abas" href="imc.html">IMC</a>
+            <a class="abas" href="contato.html">Fale Conosco</a>
+            <select>
+                <option value="" disabled selected>Tipo de Serviço</option>
+                <option>Nutrição Clínica</option>
+                <option>Nutrição Esportiva</option>
+                <option>Nutrição Comportamental</option>
+                <option>Nutrição Bariátrica</option>
+                <option>Produtos</option>
+                <option>Receita</option>
+                <option>Exames</option>
+            </select>
+
+        </div>
+    </header>
+    <div style="display: flex;">
+        <img
+            src="https://sp.unifesp.br/epm/biofisica/images/CSP/USER/Jornalista_-_Loane/not%C3%ADcias_imagens/nutricao-saudavel.jpg" style="width: 700px; border-radius: 20px; margin-top: 20px; margin-left: 20px;">
+        <section id="imc-calculator">
+            <h2>Calculadora de IMC</h2>
+            <input type="number" id="peso" placeholder="Peso (kg)" style="width: 150px;">
+            <input type="number" id="altura" placeholder="Altura (m)" style="width: 150px;">
+            <button onclick="calculateIMC()">Calcular IMC</button>
+            <p id="imcResult" style="margin-top: 20px;"></p>
+        </section>
+        <img
+            src="https://livup-cms.imgix.net/piramide_alimentar_para_alimentacao_saudavel_48d43b2c98.jpg?auto=compress,format" style="width: 650px; border-radius: 20px; margin-top: 20px; margin-right: 20px;">
+    </div>
+    <script src="script.js"></script>
+    <main>
+        <!-- IMC -->
+
+    </main>
+    <footer style="background-color: #333; color: #fff; padding: 40px 50px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+            <!-- Coluna 1: Menus de Navegação -->
+            <div style="flex: 1;">
+                <h3>Menu</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; padding-left: 213px;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Ínicio</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Quem somos</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">IMC</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Localização</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 2: Políticas e Termos -->
+            <div style="flex: 1;">
+                <h3>Políticas</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Política de Privacidade</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Termos de Serviço</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Formulário de Newsletter -->
+            <div style="flex: 1;">
+                <h3>Receba nossas Novidades</h3>
+                <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="email" name="email" placeholder="Seu email"
+                        style="padding: 10px; border-radius: 5px; border: none;">
+                    <button type="submit"
+                        style="padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <p>&copy; 2024 Instituto Santé. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
